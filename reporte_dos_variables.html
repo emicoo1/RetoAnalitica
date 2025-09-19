@@ -1,0 +1,90 @@
+<meta charset='utf-8'><h1>Reporte — Dos variables: BMI y Age</h1>
+<h2>Visualización y Análisis de Datos (2 variables)</h2>
+<p><strong>Diagrama de barras — BMI</strong></p>
+<p><img alt="" src="figs_2vars/bar_BMI.png" />
+<em>Explicación</em>: La mayor concentración está en el bin <strong>(27.98, 32.87]</strong> (207 obs, 27.0%). Rango total [18.20, 67.10], media 32.46, mediana 32.30.</p>
+<p><strong>Histograma — BMI</strong></p>
+<p><img alt="" src="figs_2vars/hist_BMI.png" />
+<em>Explicación</em>: Distribución sesgada a la derecha (skew=0.60); dispersión (std=6.88). La media vs mediana sugiere cola derecha.</p>
+<p><strong>Caja y Bigotes — BMI</strong></p>
+<p><img alt="" src="figs_2vars/box_BMI.png" />
+<em>Explicación</em>: Mediana 32.30, Q1=27.50, Q3=36.60 (IQR=9.10). Posibles atípicos (regla IQR): <strong>8</strong>. Umbrales: [13.85, 50.25].</p>
+<p><strong>Diagrama de barras — Age</strong></p>
+<p><img alt="" src="figs_2vars/bar_Age.png" />
+<em>Explicación</em>: La mayor concentración está en el bin <strong>(20.999, 27.0]</strong> (332 obs, 43.2%). Rango total [21.00, 81.00], media 33.24, mediana 29.00.</p>
+<p><strong>Histograma — Age</strong></p>
+<p><img alt="" src="figs_2vars/hist_Age.png" />
+<em>Explicación</em>: Distribución sesgada a la derecha (skew=1.13); dispersión (std=11.76). La media vs mediana sugiere cola derecha.</p>
+<p><strong>Caja y Bigotes — Age</strong></p>
+<p><img alt="" src="figs_2vars/box_Age.png" />
+<em>Explicación</em>: Mediana 29.00, Q1=24.00, Q3=41.00 (IQR=17.00). Posibles atípicos (regla IQR): <strong>9</strong>. Umbrales: [-1.50, 66.50].</p>
+<p><strong>Mapa de calor (correlación entre las dos variables)</strong></p>
+<p><img alt="" src="figs_2vars/heatmap_2vars.png" />
+<em>Explicación</em>: Corr(BMI, Age) = <strong>0.026</strong> → correlación <strong>baja positiva</strong>.</p>
+<p><strong>Rangos y estadísticos (solo 2 variables)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">median</th>
+<th style="text-align: right;">std</th>
+<th style="text-align: right;">skew</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">BMI</td>
+<td style="text-align: right;">18.2</td>
+<td style="text-align: right;">67.1</td>
+<td style="text-align: right;">32.455</td>
+<td style="text-align: right;">32.3</td>
+<td style="text-align: right;">6.875</td>
+<td style="text-align: right;">0.599</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">33.241</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">11.76</td>
+<td style="text-align: right;">1.13</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Atípicos por IQR (conteo)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">posibles_atipicos_IQR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">BMI</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age</td>
+<td style="text-align: right;">9</td>
+</tr>
+</tbody>
+</table>
+<h3>Respuestas — Visualización y Análisis (solo BMI y Age)</h3>
+<p><strong>1) ¿Hay alguna variable que no aporta información?</strong><br />
+Ninguna muestra varianza ~0; ambas aportan variabilidad.</p>
+<p><strong>2) Si tuvieras que eliminar variables, ¿cuáles y por qué?</strong><br />
+Eliminación solo si hubiera varianza casi nula o correlación ~1 con otra variable; con estas dos no aplica.</p>
+<p><strong>3) Rangos (min–max):</strong><br />
+- <strong>BMI</strong>: min=18.2, max=67.1
+- <strong>Age</strong>: min=21.0, max=81.0</p>
+<p><strong>4) ¿Existen datos atípicos?</strong><br />
+(Criterio IQR)
+- <strong>BMI</strong>: 8
+- <strong>Age</strong>: 9</p>
+<p><strong>5) ¿Existe correlación alta?</strong><br />
+Corr(BMI, Age) = 0.026 → baja positiva.</p>
